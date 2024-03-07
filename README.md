@@ -17,9 +17,9 @@ Firmata https://github.com/firmata/protocol/blob/master/protocol.md
 
 **CMD & DATA** - up to the user
 
-**SysEx msg:**
-**F0 7D 7F DiyId PID DeviceId CMD DATA F7**
-(it could also be 0x7E or 0x7D or ?? suggest)
+**SysEx msg:** using 0x7D Experimental and 'claiming' 0x7F for diy (it could also be 0x7E or 0x7D or ?? suggest)
+
+### F0 7D 7F DiyId PID DeviceId CMD DATA F7
 
 Diy ID:
 diy.json (Once 0x7F is reached, next diy vendor rolls over to be 0x00 0x01, same could be applied to PID etc)
